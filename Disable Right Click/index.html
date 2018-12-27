@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Disable Right Click Menu In Html Page Using jQuery.</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background: #262626;
+		}
+		html {
+			font-family: sans-serif;
+			font-size: 40px;
+			color: #ffffff;
+			top: 50%;
+			left: 50%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<p>Inspect Me! &#9785;</p>
+
+	<script type="text/javascript">
+		$(document).bind("contextmenu",function(){
+			return false;
+		});
+
+		/*$(document).ready(function() {
+			$(this).on('contextmenu', function(e) {
+				e.preventDefault();
+			});
+		});*/
+	</script>
+</body>
+</html>
