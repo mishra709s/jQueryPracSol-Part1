@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scroll To Top Of The Page Using jQuery.</title>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background: #262626;
+		}
+		html {
+			/* scroll-behavior: smooth; */
+			font-family: sans-serif;
+			font-size: 40px;
+			color: #ffffff;
+			top: 50%;
+			left: 50%;
+			text-align: center;
+		}
+		a {
+			text-decoration: none;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<p>jQuery</p>
+	<a href="#top">Go Top</a>
+
+	<script type="text/javascript">
+		$("a[href='#top']").click(function() {
+			$("html, body").animate({ scrollTop: 0 }, "slow");
+			return false;
+		});
+
+	</script>
+</body>
+</html>
