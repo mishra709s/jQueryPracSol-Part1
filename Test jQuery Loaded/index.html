@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test If jQuery Is Loaded</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background: #262626;
+		}
+		html {
+			font-family: sans-serif;
+			font-size: 40px;
+			color: #ffffff;
+			top: 50%;
+			left: 50%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<p>Click Me!</p>
+	<div class="sc"></div>
+	<div class="dc"></div>
+	<script type="text/javascript">
+		$('p').bind("click", function() {
+			$('<p>This Is A Click Event.</p>').appendTo('div.sc');
+		});
+
+		$('p').bind('dblclick', function(){
+			$('<p>This IS A Double-Click Event.</p>').appendTo('div.dc');
+		});
+	</script>
+</body>
+</html>
