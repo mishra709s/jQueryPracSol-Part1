@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blink Text Using jQuery.</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background: #262626;
+		}
+		html {
+			font-family: sans-serif;
+			font-size: 40px;
+			color: #ffffff;
+			top: 50%;
+			left: 50%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="mainText">jQuery <span class="subText">Exercises</span> and Solutions</div>
+
+	<script type="text/javascript">
+		/*let blink = () => {
+			$('.mainText.subtext').fadeOut(500);
+			$('.mainText.subText').fadeIn(500);
+		}
+		setInterval(blink, 1000);*/
+
+		function blink_text() {
+			$('.subText').fadeOut(500);
+			$('.subText').fadeIn(500);
+		}
+		setInterval(blink_text, 1000);
+	</script>
+</body>
+</html>

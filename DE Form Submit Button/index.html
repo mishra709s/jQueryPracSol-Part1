@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Disable or Enable Form Submit Button.</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background: #262626;
+		}
+		html {
+			font-family: sans-serif;
+			font-size: 40px;
+			color: #ffffff;
+			top: 50%;
+			left: 50%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<input id="accept" type="checkbox" name="accept" value="y">I Accept<br>
+	<input id="submitbtn" disabled="disabled" type="submit" name="Submit" value="Submit">
+	<div class="text"></div>
+	<script type="text/javascript">
+		$('#accept').click(function() {
+			if ($('#submitbtn').is(':disabled')) {
+				$('#submitbtn').removeAttr('disabled');
+			} else {
+				$('#submitbtn').attr('disabled', 'disabled');
+			}
+		});
+
+		$('#submitbtn').click(function() {
+			$('.text').append("<p>Button Clicked.</p>");
+			$('#submitbtn').attr('disabled', 'disabled');
+		});
+	</script>
+</body>
+</html>
